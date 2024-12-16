@@ -1,0 +1,87 @@
+body{
+  font:20px/1.231 Monospace Slab Serif, clean,sans-serif; /* YUI Font Reset */
+  *font-size: large;     /* YUI Font Reset */
+  *font:x-small;        /* YUI Font Reset */
+  height: 100%;
+  background: white;
+background: white    /* not all browsers set white as the default background color  */
+  color: darkblue;         /* color is set to create not too much contrast with the background color */
+  line-height: 1.4;    /* line-height is to ensure that text is legible enough ( enough space between the lines) */
+  margin: 50px;
+  max-width: 600px;
+}
+h1, h2, h3{
+  align-items: center;
+  color: red;
+  text-decoration: none;
+}
+p {
+  color: darkblue;
+}
+
+h1 {
+	/*18px via YUI Fonts CSS foundation*/
+	font-size:200%;
+}
+
+h2 {
+	/*16px via YUI Fonts CSS foundation*/
+	font-size:153,9%;
+}
+
+h3 {
+	/*14px via YUI Fonts CSS foundation*/
+	font-size:108%;
+}
+
+nav > ul > li {
+	display: inline;
+  list-style: none;
+  padding: 30px;
+}
+
+nav > ul > li > a {
+  color: green;
+  text-decoration: none;
+}
+  
+nav > ul > li > a:hover {
+  color: red;
+  font-size: 110%;
+  }
+
+img {vertical-align: top;
+max-width: 500px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+
+
+
+
+/* this is to fix IE 6 and 7 which create extra right/left padding on buttons
+ * IMPORTANT: because IE 6 does not understand the first selector below, you need to apply the class "inputButton" to all input of type="button" in your documents
+ * the first declaration is for IE 6 and 7, the second one for IE 6 only, the third one is for all browsers.
+ */
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.inputButton {
+  *overflow: visible;
+  _width: 0;
+  padding: .2em .4em;
+}
+
+/* styling for links and visited links as well as for links in a hovered, focus and active state
+ * make sure to keep these rules in that order, with :active being last
+ * a:focus and :focus are used to help keyboard users, you may change their styling, but make sure to give users a visual clue of the element's state.
+ * outline:none used with the pseudo-class :active is to avoid the sticky outline when a user clicks on a link, but choose to not follow it
+ * note that the last rule does not do anything in IE as this browser does not support "outline" (besides, it treats :active and :focus the same)
+ */
+a:link, a:visited {color: #000;}
+a:focus,:focus {outline: 1px dotted #000;}
+a:active, input:active, select:active, textarea:active {outline: none;}
+
+
